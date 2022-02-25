@@ -79,6 +79,7 @@ public class Simple2DAO {
 			stmt = conn.prepareStatement(sql.toString());
 			rs = stmt.executeQuery();
 			// 결과처리(Select문만 ResultSet 객체 리턴)
+			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
