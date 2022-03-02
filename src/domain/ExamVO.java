@@ -9,6 +9,7 @@ import java.util.Date;
  */
 public class ExamVO {
 
+	//필드
 	private int num;
 	private String varcharTest;
 	private String charTest;
@@ -20,7 +21,8 @@ public class ExamVO {
 	// default constructor
 	public ExamVO() {
 	}
-
+	
+	//using fields
 	public ExamVO(int num, String varcharTest, String charTest, double doubleTest, Date dateTest,
 			Timestamp dateTimeTest) {
 		this.num = num;
@@ -31,12 +33,14 @@ public class ExamVO {
 		this.dateTimeTest = dateTimeTest;
 	}
 
+	//override toString()
 	@Override
 	public String toString() {
 		return "ExamVO [num=" + num + ", varcharTest=" + varcharTest + ", charTest=" + charTest + ", doubleTest="
 				+ doubleTest + ", dateTest=" + dateTest + ", dateTimeTest=" + dateTimeTest + "]";
 	}
 	
+	//getters & setters
 	public int getNum() {
 		return num;
 	}
